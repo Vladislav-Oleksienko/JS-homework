@@ -1,5 +1,14 @@
 // // #1
-// for
+// Цикл, який рахує суму чисел 1 + 2 + 3 ... + 100
+const sum = function(num) {
+  if (num === 0) {
+    return num;
+  } else {
+    return (num += sum(num - 1));
+  }
+};
+
+console.log(sum(100));
 
 // #2 Tamagochi object
 const tamagochi = {
